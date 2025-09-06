@@ -1,0 +1,441 @@
+html {
+    scroll-behavior: smooth; /* for smooth scrolling */
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    z-index: 1000; /* to stay on top of other contents */
+    position: fixed; /* to stay on top of the website */
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 75px;
+    width: 100%;
+    background-color: #b5b1ab;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo {
+    margin-top: 10px;
+    aspect-ratio: 1 / 1;
+    width: 28%;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    filter: invert(100%);
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 28px;
+    padding: 5px;
+    display: inline-block;
+    color: black;
+    transition: all 0.3s ease; /* for smooth in and out */
+}
+
+nav a:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+/* background video css code */
+.bg_video {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -8px;
+    position: relative;
+}
+
+/* vide code to fit the screen */
+.bg {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/* text code to overlay on the video */
+.over {
+    z-index: 5;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 99vw;
+    font-size: 28px;
+    color: white;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* space between buttons */
+    margin-top: 20px;
+}
+
+.btns a {
+    transition: all 0.5s ease;
+}
+
+.btns a:hover {
+    transform: scale(1.03);
+
+}
+
+/* the button on the overlay */
+.reach {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px; /* vertically center text */
+    height: 50px;
+    width: 165px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    background-color: #b5b1ab;
+    color: black;
+    text-decoration: none; /* remove underline */
+    cursor: pointer;
+}
+
+.reach:hover {
+    color: white;
+    background-color: grey;
+}
+
+.resume {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px; /* vertically center text */
+    height: 50px;
+    width: 165px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    background-color: #b5b1ab;
+    color: black;
+    text-decoration: none; /* remove underline */
+    cursor: pointer;
+}
+
+.resume:hover {
+    color: white;
+    background-color: grey;
+}
+
+/* code for services section */
+section h1 {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.services {
+    text-align: center; /* to keep text centered */
+    height: 100vh;
+    width: 100vw;
+    margin-left: -8px;
+    justify-items: center;
+    background-color: white;
+}
+
+.services h1 {
+    margin: auto;
+    font-size: 30px;
+}
+
+.services_head {
+    border-bottom: 3px solid #00c6ff;
+}
+
+/* the two offered services */
+.serv {
+    display: grid; /* to make the div grid */
+    grid-template-columns: repeat(3, 1fr); /* to 2 by 1 the grid */
+    column-gap: 60px;
+    padding-top: 100px;
+}
+
+/* the 2 div containing the services offered */
+.serv_box {
+    background-color: #b5b1ab;
+    width: 300px;
+    height: 50vh;
+    border-radius: 40px;
+    box-shadow: 10px 5px 10px black; /* to add shadow to the boxes */
+    transition: all 0.3s ease;
+}
+
+.serv_box:hover {
+    transform: scale(1.03);
+    filter: invert(100%);
+}
+
+/* the texts on the services boxes */
+.serv_box p {
+    padding-left: 10px; /* to keep the letters from touching the corner of the box */
+    padding-right: 10px; /* to keep the letters from touching the corner of the box */
+}
+
+.serv_box h1 {
+    margin-top: -20px;
+}
+
+.serv_box .serv_text {
+    font-size: 24px;
+}
+
+.about {
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100vw;
+    background-color: #b5b1ab;
+    justify-items: center;
+    align-content: center ;
+    margin-left: -8px;
+}
+
+.about-grid {
+    display: grid; /* to make the div grid */
+    grid-template-columns: repeat(2, 1fr); /* to 2 by 1 the grid */
+    align-items: center;
+    justify-items: center;
+    font-size: 35px;
+    gap: 100px;
+}
+
+.about_texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 550px;
+    height: 550px;
+    padding-bottom: 100px;
+}
+
+.about_photo {
+    width: 550px;
+    height: 550px;
+}
+
+.about_photo img {
+    aspect-ratio: 1 / 1  ;
+    width: 550px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+.skills_text {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #00c6ff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.skills_div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin: auto;
+}
+
+.progress {
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.progress:hover {
+    transform: translateY(-8px);
+}
+
+.prog {
+    width: 100%;
+    height: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    appearance: none;
+}
+
+.prog::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.prog::-webkit-progress-value {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border-radius: 10px;
+}
+
+.works {
+    height: 100vh;
+    width: 100vw;
+    margin-left: -8px;
+    background-color: #b5b1ab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.works h1 {
+    text-align: center;
+    border-bottom: 3px solid #2a5298;
+    font-size: 30px;
+    
+}
+
+.works_div {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.works_box {
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+.works_box:hover {
+    transform: scale(1.03);
+}
+
+.works_img {
+    aspect-ratio: 1 / 1;
+    width: 25%;
+}
+
+.gallery {
+    aspect-ratio: 1 / 1;
+    width: 30%;
+}
+
+.contact {
+    color: white;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    margin-left: -8px;
+}
+
+.form {
+    background-color: white;
+    background: #fff;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+.btn {
+    background: #6ea9f5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:hover {
+    background: #5a92d8;
+}
+
+.btn i {
+    font-size: 14px;
+}
+
+.cont h1 {
+    margin-top: -80px;
+}
+
+.foot {
+    height: 70px;
+    width: 100vw;
+    background-color: #b5b1ab;
+    margin-left: -8px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.icons {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    gap: 5px;
+    font-size: 40px;
+    margin: auto;
+}
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome/all.min.css">
+        <link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <title>Portfolio</title>
+    </head>
+  
+    <body>
+        <section id="home">
+        <!-- HTML for the header containing logo and navigation -->
+        <header class="head">
+            <div>
+                <a href="https://github.com/AljenDriech">
+                    <img  class="logo" src="alj.png" alt="logo">
+                </a>
+            </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#services">SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#skills">SKILLS</a>
+                        </li>
+                        <li>
+                            <a href="#works">WORKS</a>
+                        </li>
+                        <li>
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+
+        <!-- background video html code -->
+            <div class="bg_video">
+                <video class="bg" autoplay muted loop playsinline>
+                <source src="bg.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        <!-- text over video html code -->
+            <div class="over">
+                <h1 class="name">Hi, I'm Aljen Driech</h1>
+                <p class="u">Web Design Student</p>
+                <div class="btns">
+                    <a href="#contact" class="reach">Reach Out</a>
+                    <a class="resume" href="resume.pdf" download>Download Resume</a>
+                </div>
+            </div>
+        </section>    
+
+<!-- HTML Code for services section -->
+        <section class="services" id="services">
+            <h1 class="services_head">MY SERVICES</h1>
+                <div class="serv">
+                    <div class="serv_box">
+                        <h1 class="serv_text"><i class="fa-brands fa-java"></i>Java Programming</h1>
+                        <p>I have experience in Java programming, creating applications that demonstrate problem-solving and strong logic skills.</p>
+                    </div>
+                    <div class="serv_box">
+                        <h1 class="serv_text"><i class="fa-brands fa-html5"></i>Web Designing</h1>
+                        <p>I specialize in web designing by creating responsive, visually appealing, and user-friendly websites. My focus is on combining modern design trends with functionality to ensure that each website not only looks professional but also delivers a smooth and engaging experience across all devices.</p>
+                    </div>
+                    <div class="serv_box">
+                        <h1 class="serv_text"><i class="fa fa-gamepad"></i>Game Development</h1>
+                        <p>I design and develop engaging, interactive game experiences by combining creative storytelling with strong technical expertise in game mechanics and programming.</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- about sections -->
+        <section id="about" class="about">
+            <div class="about-grid">
+                <div class="about_texts">
+                    <h1 class="about-h1">About Me</h1>
+                    <p>I am a Web Design student at Metro Dumaguete College Incorporation. Currently a second year student taking the course of Bachelor of Science and Information Technology.</p>
+                </div>
+
+                <div class="about_photo">
+                    <img src="f.png" alt="pic">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h1 class="skills_text">SKILLS AND PROFICIENCIES</h1>
+                <div class="skills_div">
+                    <div class="progress">
+                        <p><b>TECHNICAL SKILLS</b></p>
+                        <br>
+                        <p>Java, HTML, CSS, jQuery, PHP, SQL</p>
+                        <progress class="prog" value="75" max="100"></progress>
+                        <br>
+                        <p>Sofware and Web Development</p>
+                        <progress class="prog" value="60" max="100"></progress>
+                    </div>
+
+                    <div class="progress">
+                        <p><b>LANGUAGES</b></p>
+                        <br>
+                        <p>American English</p>
+                        <progress class="prog" value="85" max="100"></progress>
+                        <br>
+                        <p>Native (Filipino)</p>
+                        <progress class="prog" value="95" max="100"></progress>
+                    </div>
+                </div>
+        </section>
+        
+        <section id="works" class="works">
+            <h1>Works</h1>
+                <div class="works_div">
+                    <div class="works_box">
+                        <img class="works_img" src="myth.png" alt="game_logo">
+                        <br>
+                        <p><b>Myth Warrior</b></p>
+                        <p>Myth Warrior is a text-based RPG game I made using Java.</p>
+                    </div>
+
+                    <div class="works_box">
+                        <img class="gallery" src="sc.png" alt="sc">
+                        <br>
+                        <p>This is a simple Image Gallery using purely HTML and CSS. You can view this project <a href="https://aljendriech.github.io/driech-image-gallery/">here.</a></p>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="form">
+                <form>
+                    <div class="input">
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <textarea placeholder="Type Your Message Here"></textarea>
+                    <br><br>
+                    <button type="submit" class="btn">
+                        <i class="fa-solid fa-paper-plane"></i>SUBMIT
+                    </button>
+                </form>
+            </div>
+            <div class="cont">
+                <h1>Reach Out</h1>
+                <br>
+                <br>
+                <p><b>ALJEN DRIECH D. MARCILLANA</b></p>
+                <p>aljendriechmarcillana@gmail.com</p>
+                <br>
+                <p><b>CONNECT WITH ME</b></p>
+                <a class="icons" href="https://www.facebook.com/aljen.driech"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+        </section>
+    </body>
+    <footer class="foot">
+        <div class="footer">
+            <p>&copy; Created on 2025 by Aljen Driech D. Marcillana</p>
+        </div>
+    </footer>
+</html>
