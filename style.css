@@ -332,20 +332,17 @@ section h1 {
 .works_box {
     text-align: center;
     border-radius: 12px;
-    transition: all 0.3s ease;
 }
-.works_box:hover {
-    transform: scale(1.03);
-}
+
 
 .works_img {
     aspect-ratio: 1 / 1;
-    width: 25%;
+    width: 30%;
+    transition: all 0.3s ease;
 }
 
-.gallery {
-    aspect-ratio: 1 / 1;
-    width: 30%;
+.works_img:hover {
+    transform: scale(1.03)
 }
 
 .contact {
