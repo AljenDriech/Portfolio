@@ -4,21 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="fontawesome/all.min.css">
-        <link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+        <link rel="stylesheet" href="fontawesome/all.min.css"> 
+        <link rel="stylesheet" href="fontawesome/fontawesome.min.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">  <!-- for poppins font -->
         <title>Portfolio</title>
     </head>
   
     <body>
         <section id="home">
-        <!-- HTML for the header containing logo and navigation -->
         <header class="head">
             <div>
                 <a href="https://github.com/AljenDriech">
                     <img  class="logo" src="alj.png" alt="logo">
                 </a>
             </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+            <label for="menu-toggle" class="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
                 <nav>
                     <ul>
                         <li>
@@ -43,14 +51,12 @@
                 </nav>
         </header>
 
-        <!-- background video html code -->
             <div class="bg_video">
                 <video class="bg" autoplay muted loop playsinline>
                 <source src="bg.mp4" type="video/mp4">
                 </video>
             </div>
 
-        <!-- text over video html code -->
             <div class="over">
                 <h1 class="name">Hi, I'm Aljen Driech</h1>
                 <p class="u">Web Design Student</p>
@@ -61,7 +67,6 @@
             </div>
         </section>    
 
-<!-- HTML Code for services section -->
         <section class="services" id="services">
             <h1 class="services_head">MY SERVICES</h1>
                 <div class="serv">
@@ -80,7 +85,6 @@
                 </div>
         </section>
 
-        <!-- about sections -->
         <section id="about" class="about">
             <div class="about-grid">
                 <div class="about_texts">
@@ -175,4 +179,3 @@
         <p>Submitted to Mr. Danny Gen Menardo</p>
     </footer>
 </html>
-
